@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--桌面小控件
+最小宽高，不能超过屏幕大小
+更新周期定为0，表示自己控制更新时间，使用定时器-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/view_widget"
+    android:minHeight="40dp"
+    android:minWidth="200dp"
+    android:updatePeriodMillis="0">
+
+</appwidget-provider>

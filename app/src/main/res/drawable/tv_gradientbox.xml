@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--状态选择器，用的不是图片，是用xml，里面用的shape
+默认时transparent为透明-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gradient_box" android:state_pressed="true" />
+    <item android:drawable="@drawable/gradient_box" android:state_focused="true" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

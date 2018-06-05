@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:layout_toLeftOf="@id/tv_appsize"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="程序名字"/>
+
+    <TextView
+        android:id="@+id/tv_applocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appname"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:layout_marginBottom="3dip"
+        android:textColor="#88000000"
+        android:textSize="14sp"
+        android:text="程序位置，手机内存还是SD卡"/>
+
+    <TextView
+        android:id="@+id/tv_appsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:layout_marginRight="5dp"
+        android:text="程序大小"/>
+</RelativeLayout>

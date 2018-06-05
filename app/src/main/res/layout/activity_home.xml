@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--自定义样式-->
+    <TextView
+        style="@style/TiTleTheme"
+        android:text="功能列表" />
+    <!--跑马灯：
+    1、singleLine="true"
+    2、focusable="true"
+    3、focusableInTouchMode="true"
+    4、ellipsize="marquee"
+    5、marqueeRepeatLimit="marquee_forever" 第5个可设可不设
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！这是跑马灯！！！！" />
+    <!--类似于ListView，这个是网格状，
+    numColumns="3" 设置列数
+    verticalSpacing="20dp" 设置行与行之间空隙
+    -->
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"></GridView>
+</LinearLayout>

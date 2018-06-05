@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--自定义样式-->
+    <TextView
+        style="@style/TiTleTheme"
+        android:text="设置中心" />
+    <!--自定义控件，要有命名空间，控件名字要写全-->
+    <com.example.admin.phoneguardian.activity.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:desc_off="自动更新已经关闭"
+        my:desc_on="自动更新已经开启"
+        my:title="自动更新设置" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemView
+        android:id="@+id/siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:desc_off="电话归属地显示已经关闭"
+        my:desc_on="电话归属地显示已经开启"
+        my:title="电话归属地显示设置" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemClickView
+        android:id="@+id/sicv_addressstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemClickView
+        android:id="@+id/sicv_addresslocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemView
+        android:id="@+id/siv_rocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:desc_off="小火箭已经关闭"
+        my:desc_on="小火箭已经开启"
+        my:title="小火箭开启设置" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemView
+        android:id="@+id/siv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:desc_off="电话短信拦截已经关闭"
+        my:desc_on="电话短信拦截已经开启"
+        my:title="电话短信拦截开启设置" />
+
+    <com.example.admin.phoneguardian.activity.SettingItemView
+        android:id="@+id/siv_dog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:desc_off="软件锁已经关闭"
+        my:desc_on="软件锁已经开启"
+        my:title="软件锁开启设置" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click1"
+        android:text="YY" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click2"
+        android:text="YYY" />
+
+</LinearLayout>

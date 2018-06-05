@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义属性，添加给自定义控件使用
+    属性名字和属性格式-->
+    <declare-styleable name="SettingItemView">
+        <attr name="title" format="string"></attr>
+        <attr name="desc_on" format="string"></attr>
+        <attr name="desc_off" format="string"></attr>
+    </declare-styleable>
+</resources>

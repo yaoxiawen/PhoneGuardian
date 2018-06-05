@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备管理器-->
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <!--强制锁屏-->
+        <force-lock></force-lock>
+        <!--清楚数据-->
+        <wipe-data></wipe-data>
+        <!--重置密码-->
+        <reset-password></reset-password>
+    </uses-policies>
+</device-admin>
